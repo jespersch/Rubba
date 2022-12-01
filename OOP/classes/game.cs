@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Data.SqlClient;
+using System.Runtime.CompilerServices;
 
 namespace OOP
 {
-	public class game
+	public class Game
 	{
-		public game()
+		SqlConnection connection;
+		public Game()
 		{
-
-			
+			connection = new SqlConnection();
 
 		}
 	}
