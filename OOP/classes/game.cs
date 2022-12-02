@@ -6,11 +6,35 @@ namespace OOP
 {
 	public class Game
 	{
-		SqlConnection connection;
+		private SqlConnection connection = new SqlConnection();
+
+		private Dictionary<int, string> table_Data = new Dictionary<int, string>();
+
+		private KeyValuePair<int, string> record = default;
+
 		public Game()
 		{
-			connection = new SqlConnection();
+
+			table_Data.Add(1, "battlefield 2024");
+			table_Data.Add(2, "mc");
+			table_Data.Add(3, "rs");
+
+		}
+		public KeyValuePair<int, string> find(int id)
+		{
+			var key = id;
+
+			var value = table_Data[key];
+
+			var record = new KeyValuePair<int, string>(key, value);
+
+			this.record = record;
+
+			return record;
+
 
 		}
 	}
 }
+
+
