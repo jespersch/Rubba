@@ -16,7 +16,7 @@ namespace OOP
 		{
 
 			table_Data.Add(1, "battlefield 2024");
-			table_Data.Add(2, "mc");
+			table_Data.Add(2, "m");
 			table_Data.Add(3, "rs");
 
 		}
